@@ -1,0 +1,180 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Top Colored Banner */
+.topBanner {
+  height: 140px;
+  background: linear-gradient(
+    90deg,
+    #0f7ae5,
+    #0f7ae5 15%,
+    #2439b8 40%,
+    #2439b8 60%,
+    #0f7ae5 85%,
+    #0f7ae5
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Center Logo Content */
+.bannerContent {
+  text-align: center;
+  color: #fff;
+}
+
+.logo {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-transform: lowercase;
+}
+
+.tagLine {
+  font-size: 1rem;
+  margin-top: -5px;
+}
+
+/* Whtite Secti0n */
+.pageTitle {
+  background-color: #fff;
+  padding: 3.5rem 0;
+  text-align: center;
+}
+
+.pageTitle h2 {
+  font-size: 2.5rem;
+  color: #3b1f0e;
+}
+
+/* ===Title Content=== */
+.transactionDetails {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+/* Two Column Layout */
+.detailsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+/* Card */
+.detailsCard {
+  border: 1px solid #d9e1ec;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.rightCard {
+  height: 140px;
+}
+
+/* Row */
+.detailRow {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  min-height: 70px;
+}
+
+/* Left Blue Label */
+.label {
+  background-color: #0f7ae5;
+  color: #fff;
+  padding: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+/* Right White Value */
+.value {
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  color: #2d3340;
+  font-size: 1rem;
+}
+
+/* Divider Btw Rows */
+.detailRow:not(:last-child) .label,
+.detailRow:not(:last-child) .value {
+  border-bottom: 1px solid #d9e1ec;
+}
+
+/* ===Transaction Table=== */
+.txnTableSection {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+/* Wrapper for horizontal scroll on small screens */
+.txnTableWrapper {
+  overflow-x: auto;
+  border: 1px solid #e4e9f1;
+  border-radius: 6px;
+}
+
+/* Table Base */
+.txnTable {
+  /* width: 100%; */
+  border-collapse: collapse;
+  min-width: 900px;
+}
+
+/* Table Header */
+.txnTable thead th {
+  background-color: #f8fafc;
+  color: #2d3340;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-align: left;
+  padding: 16px;
+  border-bottom: 1px solid #e4e9f1;
+  white-space: nowrap;
+}
+
+/* Table Body */
+.txnTable tbody td {
+  padding: 16px;
+  font-size: 0.95rem;
+  color: #2d3340;
+  border-bottom: 1px solid #eef2f7;
+  vertical-align: top;
+}
+
+/* Zebra effect */
+.txnTable tbody tr:nth-child(even) {
+  background-color: #fcfdff;
+}
+
+/* Amount Column */
+.amountCol {
+  text-align: right;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Debit & Crtedit Styles */
+.debit {
+  color: #c0392b;
+  font-weight: 600;
+}
+
+.credit {
+  color: #1e8449;
+  font-weight: 600;
+}
+
+/* Status */
+.statusSuccess {
+  color: #1e8449;
+  font-weight: 600;
+}
